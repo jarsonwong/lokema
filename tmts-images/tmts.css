@@ -1,0 +1,29 @@
+* {margin:auto; padding:0; font-weight:500; font-family:新細明體,細明體,Arial; line-height:150%;}
+a {color:#0000FF;text-decoration:none;cursor:pointer;}
+a:hover {text-decoration:underline;}
+a img{border: 0pt;}
+
+body {font-size:12pt; text-align:center;}
+#main{width:1014pt; margin:0px auto; padding:52px 0px 0px 0px}
+.f9 {font-size:9pt;line-height:160%}
+.f10 {font-size:10pt;}
+.f11 {font-size:11pt;}
+.f12 {font-size:12pt;}
+.f13 {font-size:13pt;}
+.f14 {font-size:13pt;}
+.f15 {font-size:15pt;}
+.f16 {font-size:16pt;}
+.f18 {font-size:18pt;}
+.f20 {font-size:20pt;}
+.red {color:red;}
+.blue {color:blue;}
+.bold {font-weight:bold;}
+.right {text-align:right;}
+.left {text-align:left;}
+.center {text-align:center;}
+.Home1	{font-size:20pt; font-family:Arial Black;}
+.Home2	{font-size:18pt; font-family:Arial Black; color:#000080;}
+.Home3	{font-size:18pt; font-family:Comic Sans MS; font-weight:bold;}
+.border	{border:1px solid #EDD989}
+.border2 {border:1px solid #8BCCDA}
+.CaseMark {margin:2px;}
