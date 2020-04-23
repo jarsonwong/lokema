@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML><html><head><script>
+let isMobile = '0';
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	isMobile = '1';
+}
+
+let Router = isMobile + getUrlParameter('iso') + getUrlParameter('obj');
+switch (Router) {
+	case '0kbrowrench':
+		window.location = 'https://www.kbro.com.tw/K01/service-obstacles_5_0_16.html#repair';
+		break;
+	case '0kbropayment':
+		window.location = 'https://www.kbro.com.tw/K01/service-online-payment-intro_5_15_61.html';
+		break;
+	case '0kbrocontact':
+		window.location = 'https://www.kbro.com.tw/K01/service-other-contact_8_0_12.html#';
+		break;
+	case '0twmwrench':
+		window.location = 'https://www.twmbroadband.com/T01/service-obstacles_5_0_1063.html#repair';
+		break;
+	case '0twmpayment':
+		window.location = 'https://www.twmbroadband.com/T01/service-online-payment-intro_5_1062_1113.html';
+		break;
+	case '0twmcontact':
+		window.location = 'https://www.twmbroadband.com/T01/service-other-contact_8_0_208.html';
+		break;
+	case '0pncwrench':
+		window.location = 'https://www.pncatv.com.tw/K14/service-obstacles_5_0_988.html#repair';
+		break;
+	case '0pncpayment':
+		window.location = 'https://www.pncatv.com.tw/K14/service-online-payment-intro_5_987_1038.html';
+		break;
+	case '0pnccontact':
+		window.location = 'https://www.pncatv.com.tw/K14/service-other-contact_8_0_194.html#';
+		break;
+	case '1kbrowrench':
+		window.location = 'https://www.kbro.com.tw/K01/mobile-login.html';
+		break;
+	case '1kbropayment':
+		window.location = 'https://www.kbro.com.tw/K01/mobile-login.html';
+		break;
+	case '1kbrocontact':
+		window.location = 'https://www.kbro.com.tw/K01/service-other-contact_8_0_12.html#';
+		break;
+	case '1twmwrench':
+		window.location = 'https://www.twmbroadband.com/T01/mobile-login.html';
+		break;
+	case '1twmpayment':
+		window.location = 'https://www.twmbroadband.com/T01/mobile-login.html';
+		break;
+	case '1twmcontact':
+		window.location = 'https://www.twmbroadband.com/T01/service-other-contact_8_0_208.html';
+		break;
+	case '1pncwrench':
+		window.location = 'https://www.pncatv.com.tw/K14/mobile-login.html';
+		break;
+	case '1pncpayment':
+		window.location = 'https://www.pncatv.com.tw/K14/mobile-login.html';
+		break;
+	case '1pnccontact':
+		window.location = 'https://www.pncatv.com.tw/K14/service-other-contact_8_0_194.html#';
+		break;
+	default:
+		window.location = 'https://www.4tv.tw/';
+}
+
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+</script></head><body></body></html>
