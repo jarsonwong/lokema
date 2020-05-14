@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML><html><head><script>
+let isMobile = '0';
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	isMobile = '1';
+}
+
+let Router = isMobile + getUrlParameter('iso') + getUrlParameter('obj');
+switch (Router) {
+	case '0kbroprivacy':
+		window.location = 'https://www.kbro.com.tw/K01/content_8_50.html';
+		break;
+	case '0kbroprotection':
+		window.location = 'https://www.kbro.com.tw/K01/about-news-detail_6_0_39_239066.html';
+		break;
+	case '0twmprivacy':
+		window.location = 'https://www.twmbroadband.com/T01/content_8_1097.html';
+		break;
+	case '0twmprotection':
+		window.location = 'https://www.twmbroadband.com/T01/about-news-detail_6_0_1086_239809.html';
+		break;
+	case '0pncprivacy':
+		window.location = 'https://www.pncatv.com.tw/K14/content_8_1022.html';
+		break;
+	case '0pncprotection':
+		window.location = 'https://www.pncatv.com.tw/K14/about-news-detail_6_0_1011_275878.html';
+		break;
+	case '1kbroprivacy':
+		window.location = 'https://www.kbro.com.tw/K01/content_9_330.html';
+		break;
+	case '1kbroprotection':
+		window.location = 'https://www.kbro.com.tw/K01/about-news-detail_6_0_39_239066.html';
+		break;
+	case '1twmprivacy':
+		window.location = 'https://www.twmbroadband.com/T01/content_9_327.html';
+		break;
+	case '1twmprotection':
+		window.location = 'https://www.twmbroadband.com/T01/about-news-detail_6_0_1086_239809.html';
+		break;
+	case '1pncprivacy':
+		window.location = 'https://www.pncatv.com.tw/K14/content_9_331.html';
+		break;
+	case '1pncprotection':
+		window.location = 'https://www.pncatv.com.tw/K14/about-news-detail_6_0_1011_275878.html';
+		break;
+	default:
+		window.location = 'https://www.4tv.tw/';
+}
+
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+</script></head><body></body></html>
