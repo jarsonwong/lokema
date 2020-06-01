@@ -202,7 +202,7 @@ function setCaseMark(iNum, iMark) {
 	$.ajax({
 		url: 'ajax_casemark.asp?_NUM='+iNum+'&_MARK='+iMark,
 		success: function(response) {
-			$('#'+iNum+'-'+iMark).attr('src', '/service/image/item_mark_'+response+'.png');
+			$('#'+iNum+'-'+iMark).attr('src', 'https://u.lokema.com.tw/tmts-images/item_mark_'+response+'.png');
 			/* opener.window.location.reload(); */
 		}
 	});
