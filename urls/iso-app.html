@@ -1,0 +1,32 @@
+﻿<!DOCTYPE HTML><html><head><script>
+let Router = getUrlParameter('iso') + getUrlParameter('obj');
+switch (Router) {
+	case 'kbroandroid':
+		window.location = 'https://play.google.com/store/apps/details?id=com.kbro.portal';
+		break;
+	case 'kbroios':
+		window.location = 'https://itunes.apple.com/tw/app/kai-bai-da-kuan-pin-ke-fu/id1056947491?mt=8';
+		break;
+	case 'twmandroid':
+		window.location = 'https://play.google.com/store/apps/details?id=com.tfm.portal';
+		break;
+	case 'twmios':
+		window.location = 'https://itunes.apple.com/tw/app/tai-wan-da-kuan-pin-ke-fu/id1062550018?mt=8';
+		break;
+	case 'pncandroid':
+		window.location = 'https://play.google.com/store/apps/details?id=com.pn.portal';
+		break;
+	case 'pncios':
+		window.location = 'https://apps.apple.com/tw/app/ping-nan-ke-fu/id1120914015';
+		break;
+	default:
+		window.location = 'https://www.4tv.tw/';
+}
+
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+</script></head><body></body></html>
